@@ -13,13 +13,13 @@ Gem::Specification.new do |s|
   s.summary     = 'Payment Method for Liqpay.com.'
   s.description = 'Liqpay.com payment gateway integration for Spree E-Commerce.'
   s.license     = 'MIT'
-  s.required_ruby_version = '>= 1.9'
+  s.required_ruby_version = '>= 2.1.0'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['spec/**/*']
 
-  s.add_runtime_dependency 'spree_core', '~> 3.0'
-  s.add_runtime_dependency 'spree_frontend', '~> 3.0'
+  s.add_runtime_dependency 'solidus_core', '~> 1.0.2'
+  s.add_runtime_dependency 'solidus_frontend', '~> 1.0.2'
 
   s.add_development_dependency 'sqlite3', '~> 1.3'
   s.add_development_dependency 'rspec-rails', '~> 3.2'

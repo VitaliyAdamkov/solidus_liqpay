@@ -1,0 +1,16 @@
+<script>
+  $(function() {
+      var checkout_form = $('#checkout_form_confirm');
+      var checkout_form_action = checkout_form.prop('action');
+      var payment_provider = $('.payment-info span:first-child').text();
+      var change_submit_url = function() {
+          checkout_form.prop('action', payment_provider == 'LiqPay' ? 'https://www.liqpay.com/api/checkout' : checkout_form_action);
+      };
+      change_submit_url();
+  })
+</script>
+<% payment_method = @order.available_payment_methods.find{ |method| method.name == 'LiqPay'} %>
+<% payment_method.cnb_form_fields(@order, liqpay_result_order_checkout_url(@order),
+                                  liqpay_status_update_url(payment_method.id)).each do |name, value| %>
+  <%= hidden_field_tag name, value %>
+<% end %>
