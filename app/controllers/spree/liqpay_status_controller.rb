@@ -12,7 +12,7 @@ module Spree
 
       raise ArgumentError unless @order.payments.completed.empty? &&
         data['currency'] == @order.currency &&
-        BigDecimal(data['amount']) == @order.total &&
+        (data['amount']).to_d == @order.total &&
         data['type'] == 'buy' &&
         (data['status'] == 'success' || (@payment_method.preferred_test_mode && data['status'] == 'sandbox'))
 
