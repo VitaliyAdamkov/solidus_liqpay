@@ -1,4 +1,4 @@
-require 'solidus_core'
+require 'spree_core'
 
 module SpreeLiqpay
   class Engine < ::Rails::Engine
