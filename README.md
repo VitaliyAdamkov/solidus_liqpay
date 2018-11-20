@@ -1,13 +1,13 @@
-# Spree Liqpay
+# Solidus Liqpay
 
-[Liqpay.com](https://www.liqpay.com/en/) payment gateway API for [Spree E-Commerce](https://spreecommerce.com/).
+[Liqpay.com](https://www.liqpay.com/en/) payment gateway API for [Solidus E-Commerce](https://solidus.io/).
  
 ## Installation
  
 Update your `Gemfile`:
 
 ```ruby
-gem 'spree_liqpay', github: 'kukareka/spree_liqpay'
+gem 'solidus_liqpay', github: 'VitaliyAdamkov/solidus_liqpay'
 ```
 
 Run `Bundler`:
@@ -18,7 +18,7 @@ bundle install
   
 ## Configuration
   
-1. Login to Spree Backend. 
+1. Login to Solidus Backend. 
 
 2. Open "Configurations -> Payment Methods"
 
@@ -52,5 +52,5 @@ Run `rake app:setup` before the tests to init the dummy app.
 1. [Liqpay.com official Ruby SDK](https://github.com/liqpay/sdk-ruby) (not used by this gem)
 2. [Liqpay.com FAQ](https://www.liqpay.com/en/faq)
 3. [Liqpay.com API reference](https://www.liqpay.com/en/doc)
-
+4. [Liqpay.com payment gateway for Spree E-Commerce ](https://github.com/kukareka/spree_liqpay) and [it's fork](https://github.com/robert-hromej/spree_liqpay)
 
