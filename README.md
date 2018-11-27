@@ -1,4 +1,4 @@
-# Solidus Liqpay
+# Solidus Liqpay (adaptation not finished)
 
 [Liqpay.com](https://www.liqpay.com/en/) payment gateway API for [Solidus E-Commerce](https://solidus.io/).
  
